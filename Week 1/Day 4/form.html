@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Styled Form</title>
+  <style>
+    body {
+      background-color: #f0f8ff; 
+      font-family: Arial, Helvetica, sans-serif; 
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    form {
+      width: 350px;
+      margin: auto;
+      padding: 20px;
+      border: 2px solid #4CAF50; 
+      border-radius: 10px;
+      background-color: #ffffff; 
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    }
+
+    input[type="text"], input[type="email"], input[type="password"], select {
+      width: 95%;
+      padding: 8px;
+      margin: 5px 0 15px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="radio"], input[type="checkbox"] {
+      margin: 0 5px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049; 
+    }
+  </style>
+</head>
+<body>
+  <h2>Registration Form</h2>
+  <form>
+    Name: <input type="text" name="name"><br>
+    Email: <input type="email" name="email"><br>
+    Password: <input type="password" name="password"><br>
+    
+    Gender: 
+    <input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="female"> Female<br><br>
+    
+    Hobbies:
+    <input type="checkbox" name="hobby" value="reading"> Reading
+    <input type="checkbox" name="hobby" value="sports"> Sports
+    <input type="checkbox" name="hobby" value="music"> Music<br><br>
+    
+    Country:
+    <select name="country">
+      <option>India</option>
+      <option>USA</option>
+      <option>UK</option>
+    </select><br><br>
+    
+    <input type="submit" value="Register">
+  </form>
+</body>
+</html>
